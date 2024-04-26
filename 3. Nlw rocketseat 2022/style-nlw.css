@@ -1,0 +1,94 @@
+/* Folha de estilo */
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+    /* --gray é uma váriavel de uma cor hsl, para ser usada em outras partes do código.*/
+  --black: hsl(240, 6%, 13%);
+  --gray: hsl(240, 9%, 89%);
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  display: grid;
+  place-items: center;
+  background-color: lightgrey;
+}
+main {
+  background-image: url(./images/background.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background: cover;
+  width: 100vw;
+  min-height: 812px;
+  height: 100vh;
+}
+.container {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: var(--gray);
+}
+.avatar {
+  width: 10rem;
+  margin: 11.5rem auto 0;
+  position: relative;
+}
+.avatar span {
+  position: absolute;
+  top: -40px;
+  left: -25px;
+  z-index: 1;
+}
+.avatar > img {
+  width: 10rem;
+  height: 15rem;
+  /* A property object-fit: cover; vai trazer as propriedades da imagem quando as auterações a deixarem distorcida.*/
+  object-fit: cover;
+  /* clip-path: polygon() vai criar uma imagem de um polígono, pode ser usado para criar outras imagens também. Para saber quais estude a documentação no mdn.
+  Esse tipo de imagem pode ser criada no site Clipp CSS onde se faz a edição e copia as propriedades.*/
+  clip-path: polygon(50% 0, 100% 0%, 100% 75%, 50% 100%, 0 75%, 0 0%);
+}
+.l {
+  position: relative;
+  top:-0.1rem;
+  left: -3.8rem;
+}
+h1 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+a {
+  color:var(--gray) ;
+  text-decoration: none;
+  margin-top: 0.25rem;
+  display: flex;
+  gap: 0.75;
+  justify-content: center;
+  align-items: center;
+}
+span {
+  position: relative;
+  right: -0.5rem
+}
+p {
+  color: hsl(240, 9%, 89%)
+  ;
+  margin-top: 2rem;
+}
+ul {
+  margin-top: 2rem;
+  margin-bottom:1rem;
+  margin-left: -1rem;
+  
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+li {
+  margin-left: 2rem;
+}
