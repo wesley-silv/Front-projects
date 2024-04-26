@@ -1,15 +1,11 @@
-const heart = document.querySelector('.bi-heart')
-const heartFill = document.querySelector('.bi-heart-fill')
+const heart = document.querySelectorAll('.heart, .heart-two, .heart-three')
 
-heart.addEventListener('click', hearting)
-heartFill.addEventListener('click', noHearting)
+const heartFill = document.querySelectorAll(
+  '.heart-fill, .heart-fill-two, .heart-fill-three'
+)
 
-function hearting() {
-  heart.style.display = 'none'
-  heartFill.style.display = 'block'
-}
-
-function noHearting() {
-  heart.style.display = 'block'
-  heartFill.style.display = 'none'
-}
+heart.forEach(function (elemento) {
+  elemento.addEventListener('click', function () {
+    this.style.color = '#ff0000'
+  })
+})
