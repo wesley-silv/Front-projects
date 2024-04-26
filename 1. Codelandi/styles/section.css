@@ -1,0 +1,58 @@
+main {
+  background-color: var(--);
+}
+section {
+  background-color: var(--dark-10);
+  padding: 40px;
+}
+
+article {
+  width: 60%;
+  border: solid 2px var(--dark-20);
+  border-radius: 8px;
+  margin: 1.4em auto;
+  padding: 40px;
+}
+article:hover {
+  border: solid 2px var(--brand-color);
+}
+article .date,
+.bi-heart {
+  display: inline-block;
+  color: var(--brand-color);
+  font-size: 16px;
+  font-family: var(--inter);
+}
+
+.bi-heart:hover {
+  color: #ff0000;
+  cursor: pointer;
+}
+
+.bi-heart-fill {
+  display: none;
+  color: #ff0000;
+}
+
+.bi-heart-fill:hover {
+  cursor: pointer;
+}
+
+aside {
+  display: flex;
+  justify-content: space-between;
+}
+
+section article .title {
+  color: var(--dark-60);
+  margin: 1.5em auto;
+  font-size: 24px;
+  font-family: var(--space-grotesk);
+  font-weight: 500;
+}
+section article .description {
+  color: var(--dark-50);
+  margin: 1.4em auto;
+  font-size: 20px;
+  font-family: var(--inter);
+}
