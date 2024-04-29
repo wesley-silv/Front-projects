@@ -3,7 +3,7 @@ const LinksSocialMedia = {
   youtube: 'UCnX2orosZve9aaZTw6nONrQ',
   facebook: 'wesleysilvajapao',
   instagram: 'wesleysilvacon',
-  linkedin: 'wesleysilvaconceicao21'
+  linkedin: 'wesley-silva'
 }
 
 function changeSocialMediaLinks() {
@@ -17,6 +17,7 @@ function changeSocialMediaLinks() {
 changeSocialMediaLinks()
 
 function getGitHubProfileInfos() {
+  // Example of link to API: https://api.github.com/users/wesley-silv
   const url = `https://api.github.com/users/${LinksSocialMedia.github}`
 
   fetch(url)
@@ -30,6 +31,3 @@ function getGitHubProfileInfos() {
     })
 }
 getGitHubProfileInfos()
-
-var oque = 'I am a Dev'
-console.log(oque)
