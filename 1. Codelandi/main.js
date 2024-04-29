@@ -6,6 +6,6 @@ const heartFill = document.querySelectorAll(
 
 heart.forEach(function (elemento) {
   elemento.addEventListener('click', function () {
-    this.style.color = '#ff0000'
+    this.style.color = '#0000ff'
   })
 })
