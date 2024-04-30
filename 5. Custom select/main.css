@@ -177,6 +177,6 @@
   color: #a881e6;
 }
 
-.selected:has(.option input:checked) #category-select {
+.selected:has(.option input:checked) #selected-value {
   color: #fbf9fe;
 }
