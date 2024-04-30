@@ -8,5 +8,30 @@ let select = document.querySelector('.select'),
 inputsOptions.forEach(input => {
   input.addEventListener('click', event => {
     selectedValue.textContent = input.dataset.label
+
+    const isMouseOrTouch =
+      event.pointerType === 'mouse' || event.pointerType === 'touch'
+
+    isMouseOrTouch && optionsViewButton.click()
   })
+})
+
+window.addEventListener('keydown', e => {
+  if (!select.classList.contains('open')) {
+    if (e.key === 'Escape' || e.key === ' ') {
+      optionsViewButton.click()
+    }
+  }
+})
+
+optionsViewButton.addEventListener('input', () => {
+  select.classList.toggle('open')
+
+  if (!select.classList.contains('open')) return
+
+  const input =
+    document.querySelector('.option input:checked') ||
+    document.querySelector('.option input')
+
+  input.focus()
 })
