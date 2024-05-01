@@ -1,0 +1,48 @@
+#navigation {
+  width: 16vw;
+  height: 100vh;
+  padding: 0.4rem;
+  background-color: #f0f0f0;
+}
+
+#button-toggle .bi-list,
+.bi-x {
+  display: block;
+  font-size: 2.4rem;
+  color: #4545b7;
+}
+
+.bi-list:hover,
+.bi-x:hover {
+  cursor: pointer;
+}
+
+#button-toggle .bi-x {
+  display: none;
+}
+
+#navigation-pages {
+  font-size: 18px;
+  margin-top: 2rem;
+}
+
+#navigation-pages li {
+  margin: 1rem;
+  padding: 0.4rem;
+  border-bottom: solid 1px #4545b7;
+  font-style: italic;
+  font-weight: bold;
+}
+#navigation-pages li a:visited {
+  color: #4545b7;
+}
+#navigation-pages span {
+  margin: auto 0.5rem;
+}
+
+#navigation-pages li:hover {
+  background-color: #fff;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 100ms ease-in-out;
+}
