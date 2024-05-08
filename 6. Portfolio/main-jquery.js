@@ -1,5 +1,5 @@
-// $(document).ready(function () {
-//   $('#navigaion-pages').click(function () {
-//     $(this).hide()
-//   })
-// })
+$(document).ready(function () {
+  $('#navigation').click(function () {
+    $('#navigation').slideToggle('left','calc(-8vw)')
+  })
+})
