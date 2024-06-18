@@ -1,3 +1,5 @@
+// My old JavaScript code
+
 function managementValues() {
   let receivedValue = parseFloat(
     document.getElementById('received-value').value
